@@ -9,7 +9,7 @@
  (rust-mode . lsp-deferred)
  :config
  ;; debug
- (require 'dap-gdb-lldb)
+ (require 'dap-lldb)
  (dap-register-debug-template "Rust::LLDB Run Configuration"
                 (list :type "lldb"
      :request "launch"

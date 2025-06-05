@@ -55,6 +55,14 @@
  :custom
  (undo-tree-auto-save-history nil))
 
+(use-package shell-pop
+      :ensure t
+      :config
+      (setq shell-pop-shell-type 'shell)  ; use shell
+      (setq shell-pop-window-height 20)         ; window height
+      (setq shell-pop-window-width 80)          ; window width
+      (define-key global-map (kbd "<f12>") 'shell-pop)) ;
+
 ;;;treemacs
 
 (use-package treemacs
